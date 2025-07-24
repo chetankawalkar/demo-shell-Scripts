@@ -1,13 +1,15 @@
 #!/bin/bash
+<<help
+ this is a shell script to take backups
+ can also be used with cron
+help 
+source_dir= "/home/adminlinux/scripts"
+destination_dir= "/home/adminlinux/backups"
 
+fuction create_backup {
 
-<<info
-this shell script will take periodic backups
-info
-src=$1
-dest=$2
+timestamp=$(date '+%Y-%m-%d-%H-%M-%S')
+backup_dir="${destination_dir}/backup_${timestamp}"
 
-timestamp=$(date '+%Y-%m-%d')
-
-zip -r  "$dest/Backup-$timestamp.zip" $src >/dev/null
+zip -r  "${backup_dir}.zip"$source_dir"
 echo "Backup completed"
