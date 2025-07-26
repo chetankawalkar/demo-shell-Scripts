@@ -2,4 +2,4 @@ this is a demo file in the dev
 this is a new line 
 this commit is fine
 
-this commit is not fine (Worng ,bug)
+this commit also fine

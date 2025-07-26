@@ -2,5 +2,8 @@
 
 echo "Hello Dosto"
 echo "Welcome To DevOps -Zero To Hero"
-echo "We are "
+echo "We are learning git "
+echo "this is fine"
 date
+
+whoami
